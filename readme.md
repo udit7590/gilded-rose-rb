@@ -1,8 +1,8 @@
 ## Gilded Rose Refactoring Kata
 
-You can read more about this kata [here](https://github.com/emilybache/GildedRose-Refactoring-Kata).
+The update_quality method is refactored and test cases have been added
 
-The simplest way is to just clone the code and start hacking away improving the design. You'll want to look at the requirements below which explain what the code is for. I strongly advise you that you'll also need some tests if you want to make sure you don't break the code while you refactor. I've provided a failing unit test as a starting point (Rspec or TestUnit).
+The code has been written using Test Driven Development (TDD)
 
 ### Gilded Rose Requirements Specification
 
@@ -24,7 +24,5 @@ Pretty simple, right? Well this is where it gets interesting:
 We have recently signed a supplier of conjured items. This requires an update to our system:
 
 * 'Conjured' items degrade in Quality twice as fast as normal items
-
-Feel free to make any changes to the update-quality method and add any new code as long as everything still works correctly. However, do not alter the Item class or Items property as those belong to the goblin in the corner who will insta-rage and one-shot you as he doesn't believe in shared code ownership (you can make the UpdateQuality method and Items property static if you like, we'll cover for you).
 
 Just for clarification, an item can never have its Quality increase above 50, however 'Sulfuras' is a legendary item and as such its Quality is 80 and it never alters.
