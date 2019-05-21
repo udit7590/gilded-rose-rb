@@ -18,7 +18,7 @@ class GildedRose
         increase_quality_for_product(item)
         increase_quality_for_product(item) if (item.sell_in == 0)
       when 'Backstage passes to a TAFKAL80ETC concert'
-        if ((item.sell_in - 1) < 0)
+        if (item.sell_in == 0)
           item.quality = 0
         else
           increase_quality_for_product(item)
